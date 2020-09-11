@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Resize</title>
+</head>
+<body>
+
+<h1>Resize your uploaded image</h1>
+
+<div style="width:500px;height:500px;overflow:scroll">
+    <img src="static/{{ filename }}">
+</div>
+<div>
+    <h2>Enter the dimensions of the desired image</h2>
+    <form action="/resize" method="post">
+        <label>Width(in px)</label>
+        <input type="text" name="width">
+        <label>Height(in px)</label>
+        <input type="text" name="height"><br><br>
+        <input type="submit" value="Resize Image">
+    </form>
+</div>
+
+</body>
+</html>
